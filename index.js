@@ -165,6 +165,12 @@ module.exports = function math_plugin(md, options) {
     // Default options
 
     options = options || {};
+    if (options.katex) {
+        katex = options.katex;
+    }
+    if (!options.blockClass) {
+        options.blockClass = ""
+    }
 
     // set KaTeX as the renderer for markdown-it-simplemath
     var katexInline = function(latex){
@@ -185,17 +191,20 @@ module.exports = function math_plugin(md, options) {
     var katexBlock = function(latex){
         options.displayMode = true;
         try{
-            return "<p class='katex-block'>" + katex.renderToString(latex, options) + "</p>";
+            return `<p class="katex-block ${options.blockClass}">` + katex.renderToString(latex, options) + "</p>";
         }
         catch(error){
             if(options.throwOnError){ console.log(error); }
-            return `<p class='katex-block katex-error' title='${escapeHtml(error.toString())}'>${escapeHtml(latex)}</p>`;
+            return `<p class='katex-block katex-error ${
+                options.blockClass
+            }' title='${escapeHtml(error.toString())}'>${escapeHtml(latex)}</p>`;
         }
     }
 
     var blockRenderer = function(tokens, idx){
         return  katexBlock(tokens[idx].content) + '\n';
     }
+
 
     md.inline.ruler.after('escape', 'math_inline', math_inline);
     md.block.ruler.after('blockquote', 'math_block', math_block, {
