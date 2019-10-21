@@ -1,5 +1,5 @@
 {
-    "name": "@iktakahiro/markdown-it-katex",
+    "name": "@traPtitech/markdown-it-katex",
     "version": "3.2.0",
     "description": "Fast math support for markdown-it with KaTeX",
     "main": "index.js",
@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com:iktakahiro/markdown-it-katex.git"
+        "url": "git+ssh://git@github.com:traPtitech/markdown-it-katex.git"
     },
     "keywords": [
         "markdown",
@@ -19,7 +19,7 @@
         "markdown-it-plugin",
         "markdown-it"
     ],
-    "author": "Takahiro Ethan Ikeuchi @iktakahiro",
+    "author": "traP",
     "license": "MIT",
     "dependencies": {
         "katex": "^0.11.1"
