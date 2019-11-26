@@ -3,6 +3,7 @@
     "version": "3.2.0",
     "description": "Fast math support for markdown-it with KaTeX",
     "main": "index.js",
+    "types": "index.d.ts",
     "scripts": {
         "watch": "watchify browser.js -o bundle.js -v",
         "test": "node test/all.js"
@@ -22,6 +23,8 @@
     "author": "traP",
     "license": "MIT",
     "dependencies": {
+        "@types/katex": "^0.10.2",
+        "@types/markdown-it": "0.0.9",
         "katex": "^0.11.1"
     },
     "devDependencies": {
