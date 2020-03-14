@@ -1,0 +1,19 @@
+name: check npm ci
+on:
+  push:
+    branches:
+      - master
+jobs:
+  check:
+    name: check npm install
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          registry-url: 'https://registry.npmjs.org'
+      - name: check npm ci
+        run: npm ci
