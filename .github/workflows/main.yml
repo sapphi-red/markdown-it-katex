@@ -1,8 +1,9 @@
-name: check npm ci
+name: check npm ci & run test
 on:
   push:
     branches:
-      - master
+      - '**'
+
 jobs:
   packages:
     name: check npm install
