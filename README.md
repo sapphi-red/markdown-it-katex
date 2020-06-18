@@ -59,4 +59,4 @@ Math parsing in markdown is designed to agree with the conventions set by pandoc
 KaTeX is based on TeX and LaTeX. Support for both is growing. Here's a list of
 currently supported functions:
 
-[Function Support in KaTeX](https://github.com/Khan/KaTeX/wiki/Function-Support-in-KaTeX)
+[Function Support in KaTeX](https://katex.org/docs/supported.html)
