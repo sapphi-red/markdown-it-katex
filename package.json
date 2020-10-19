@@ -29,7 +29,7 @@
         "@types/katex": "^0.11.0",
         "@types/markdown-it": "^10.0.1",
         "jest": "^26.0.1",
-        "markdown-it": "^11.0.0",
+        "markdown-it": "^12.0.0",
         "markdown-it-testgen": "^0.1.6"
     }
 }
