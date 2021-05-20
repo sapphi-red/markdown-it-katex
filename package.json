@@ -1,6 +1,6 @@
 {
     "name": "@traptitech/markdown-it-katex",
-    "version": "3.4.2",
+    "version": "3.4.3",
     "description": "Fast math support for markdown-it with KaTeX",
     "main": "index.js",
     "types": "index.d.ts",
