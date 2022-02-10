@@ -3,6 +3,8 @@ const mdKatex = require('../index');
 const testLoad = require('markdown-it-testgen').load
 const path = require('path')
 const katex = require('katex')
+const { test } = require('uvu')
+const assert = require('uvu/assert')
 
 const md = Md().use(mdKatex)
 
@@ -22,8 +24,10 @@ testLoad(path.join(__dirname, 'fixtures/default.txt'), data => {
         })}</p>`
       )
 
-      expect(actual).toBe(expected)
+      assert.is(actual, expected)
     })
 
   })
 })
+
+test.run()
