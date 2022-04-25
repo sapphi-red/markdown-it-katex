@@ -28,7 +28,7 @@
     "devDependencies": {
         "@types/katex": "^0.14.0",
         "@types/markdown-it": "^12.0.1",
-        "markdown-it": "^12.0.6",
+        "markdown-it": "^13.0.0",
         "markdown-it-testgen": "^0.1.6",
         "uvu": "^0.5.3"
     }
