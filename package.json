@@ -23,7 +23,7 @@
     "author": "traP",
     "license": "MIT",
     "dependencies": {
-        "katex": "^0.15.1"
+        "katex": "^0.16.0"
     },
     "devDependencies": {
         "@types/katex": "^0.14.0",
